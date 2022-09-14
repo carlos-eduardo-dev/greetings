@@ -22,7 +22,7 @@ build() {
 compose() {
   message "iniciando construção dos containers"
 
-#  docker-compose -f docker/docker-compose.yml up --build -d
+  docker-compose -f docker/docker-compose.yml up --build -d
 
   message "aplicação iniciada com sucesso"
 }
@@ -34,6 +34,7 @@ if asdf --version >/dev/null; then
   asdf install gradle
 else
   message "é necessário instalar o asdf para a construção do projeto"
+  exit 1
 fi
 
 if asdf current gradle>/dev/null; then
