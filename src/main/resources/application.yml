@@ -1,0 +1,25 @@
+---
+micronaut:
+  application:
+    name: greetings
+---
+micronaut:
+  server:
+    port: 8080
+---
+micronaut:
+  metrics:
+    enabled: false
+---
+netty:
+  default:
+    allocator:
+      max-order: 3
+---
+endpoints:
+  health:
+    enabled: true
+---
+greetings:
+  message: Hello
+  instance: ${SERVICE_INSTANCE:${random.integer[1,100]}}

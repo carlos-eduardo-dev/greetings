@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.greetings
+testFramework: spock
+sourceLanguage: groovy
+buildTool: gradle
+features: [annotation-api, app-name, gradle, groovy, groovy-application, http-client, jackson-databind, logback, management, micrometer, micrometer-elastic, micronaut-build, netty-server, readme, shade, spock, yaml]
