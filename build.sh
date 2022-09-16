@@ -37,7 +37,7 @@ else
   exit 1
 fi
 
-if asdf current gradle>/dev/null; then
+if asdf current gradle >/dev/null; then
   message "gradle instalado corretamente"
 
   build
